@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(mainBinding.getRoot());
 
         mainBinding.cardPosts.setOnClickListener(v -> startActivity(new Intent(this, PostsActivity.class)));
+        mainBinding.cardComments.setOnClickListener(v -> startActivity(new Intent(this, CommentsActivity.class)));
 
     }
 }

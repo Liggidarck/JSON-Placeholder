@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JSONPlaceholder">
         <activity
+            android:name=".CommentsActivity"
+            android:exported="false" />
+        <activity
             android:name=".PostsActivity"
             android:exported="false" />
         <activity

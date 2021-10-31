@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/commentNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/commentBodyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:textSize="17sp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/commentNameView"/>
+
+    <TextView
+        android:id="@+id/commentEmailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/commentBodyView"/>
+
+    <TextView
+        android:id="@+id/commentPostIdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post id"
+        android:layout_below="@+id/commentEmailView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/commentIdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:layout_below="@+id/commentPostIdView"
+        android:layout_marginStart="10dp" />
+
+</RelativeLayout>
