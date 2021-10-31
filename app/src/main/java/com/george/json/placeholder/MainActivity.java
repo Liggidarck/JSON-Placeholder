@@ -2,6 +2,7 @@ package com.george.json.placeholder;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.george.json.placeholder.databinding.ActivityMainBinding;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(mainBinding.getRoot());
 
+        mainBinding.cardPosts.setOnClickListener(v -> startActivity(new Intent(this, PostsActivity.class)));
 
     }
 }

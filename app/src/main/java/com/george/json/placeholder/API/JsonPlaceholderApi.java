@@ -1,4 +1,6 @@
-package com.george.json.placeholder;
+package com.george.json.placeholder.API;
+
+import com.george.json.placeholder.API.posts.Post;
 
 import java.util.List;
 

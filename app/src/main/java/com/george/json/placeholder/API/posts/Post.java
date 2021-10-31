@@ -1,4 +1,4 @@
-package com.george.json.placeholder;
+package com.george.json.placeholder.API.posts;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

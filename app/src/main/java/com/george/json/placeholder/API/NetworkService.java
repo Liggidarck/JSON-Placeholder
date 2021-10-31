@@ -1,4 +1,4 @@
-package com.george.json.placeholder;
+package com.george.json.placeholder.API;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
