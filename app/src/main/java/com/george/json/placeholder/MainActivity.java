@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         mainBinding.cardPosts.setOnClickListener(v -> startActivity(new Intent(this, PostsActivity.class)));
         mainBinding.cardComments.setOnClickListener(v -> startActivity(new Intent(this, CommentsActivity.class)));
+        mainBinding.cardAlbums.setOnClickListener(v -> startActivity(new Intent(this, AlbumsActivity.class)));
+        mainBinding.cardPhotos.setOnClickListener(v -> startActivity(new Intent(this, PhotoActivity.class)));
 
     }
 }

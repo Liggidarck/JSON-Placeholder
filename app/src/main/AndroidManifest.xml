@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JSONPlaceholder">
         <activity
+            android:name=".PhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlbumsActivity"
+            android:exported="false" />
+        <activity
             android:name=".CommentsActivity"
             android:exported="false" />
         <activity
