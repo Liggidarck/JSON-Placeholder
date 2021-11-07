@@ -8,10 +8,14 @@
         <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/activity_photo.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/activity_posts.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/activity_todos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/activity_users.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/album_item.xml" value="0.1" />
         <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/comment_item.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/photo_item.xml" value="0.1" />
+        <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/photo_item.xml" value="0.33" />
         <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/post_item.xml" value="0.33" />
+        <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/todo_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/George Filatov/AndroidStudioProjects/JSON_Placeholder/app/src/main/res/layout/user_item.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

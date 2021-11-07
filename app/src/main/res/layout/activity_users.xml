@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhotoActivity">
+    tools:context=".UsersActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
-        app:title="Photos"
+        app:title="Users"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/photoRecyclerView"
+        android:id="@+id/UsersRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"/>

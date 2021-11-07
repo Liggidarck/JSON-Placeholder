@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         mainBinding.cardComments.setOnClickListener(v -> startActivity(new Intent(this, CommentsActivity.class)));
         mainBinding.cardAlbums.setOnClickListener(v -> startActivity(new Intent(this, AlbumsActivity.class)));
         mainBinding.cardPhotos.setOnClickListener(v -> startActivity(new Intent(this, PhotoActivity.class)));
-
+        mainBinding.cardTodos.setOnClickListener(v -> startActivity(new Intent(this, TodosActivity.class)));
+        mainBinding.cardUsers.setOnClickListener(v -> startActivity(new Intent(this, UsersActivity.class)));
     }
 }

@@ -4,6 +4,8 @@ import com.george.json.placeholder.API.albums.Album;
 import com.george.json.placeholder.API.comments.Comment;
 import com.george.json.placeholder.API.photos.Photo;
 import com.george.json.placeholder.API.posts.Post;
+import com.george.json.placeholder.API.todos.Todo;
+import com.george.json.placeholder.API.users.User;
 
 import java.util.List;
 
@@ -23,5 +25,11 @@ public interface JsonPlaceholderApi {
 
     @GET("photos")
     Call<List<Photo>> getAllPhotos();
+
+    @GET("todos")
+    Call<List<Todo>> getAllTodos();
+
+    @GET("users")
+    Call<List<User>> getAllUsers();
 
 }

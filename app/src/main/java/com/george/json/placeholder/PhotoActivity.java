@@ -11,8 +11,7 @@ import android.widget.Toast;
 
 import com.george.json.placeholder.API.NetworkService;
 import com.george.json.placeholder.API.photos.Photo;
-import com.george.json.placeholder.API.photos.PhotoAdapter;
-import com.george.json.placeholder.API.posts.Post;
+import com.george.json.placeholder.API.photos.PhotosAdapter;
 import com.george.json.placeholder.databinding.ActivityPhotoBinding;
 
 import java.util.ArrayList;
@@ -28,24 +27,22 @@ public class PhotoActivity extends AppCompatActivity {
     ActivityPhotoBinding photoBinding;
 
     ArrayList<Photo> photoArrayList;
-    PhotoAdapter photoAdapter;
+    PhotosAdapter photosAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        photoBinding = ActivityPhotoBinding.inflate(getLayoutInflater());
+        photoBinding =  ActivityPhotoBinding.inflate(getLayoutInflater());
         setContentView(photoBinding.getRoot());
 
-        photoBinding.photosToolbar.setNavigationOnClickListener(v -> onBackPressed());
+        photoBinding.toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
         photoBinding.photoRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         photoBinding.photoRecyclerView.setItemAnimator(new DefaultItemAnimator());
         getAllPhotos();
-
     }
 
     private void getAllPhotos() {
-
         NetworkService
                 .getInstance()
                 .getApi()
@@ -55,11 +52,10 @@ public class PhotoActivity extends AppCompatActivity {
                     public void onResponse(@NonNull Call<List<Photo>> call, @NonNull Response<List<Photo>> response) {
                         assert response.body() != null;
                         photoArrayList = new ArrayList<>(response.body());
-                        photoAdapter = new PhotoAdapter(PhotoActivity.this, photoArrayList, (photo, position) -> {
-                            Log.d(TAG, "Position: " + photo.getId());
-                            Toast.makeText(PhotoActivity.this, "Position: " + photo.getId(), Toast.LENGTH_SHORT).show();
+                        photosAdapter = new PhotosAdapter(PhotoActivity.this, photoArrayList, (photo, position) -> {
+                            Toast.makeText(PhotoActivity.this, "Position: "+ photo.getId(), Toast.LENGTH_SHORT).show();
                         });
-                        photoBinding.photoRecyclerView.setAdapter(photoAdapter);
+                        photoBinding.photoRecyclerView.setAdapter(photosAdapter);
                     }
 
                     @Override
@@ -67,7 +63,7 @@ public class PhotoActivity extends AppCompatActivity {
                         Log.e(TAG, "Error! " + t.getMessage());
                     }
                 });
-
-
     }
+
+
 }

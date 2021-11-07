@@ -5,22 +5,18 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/TitleItemPhoto"
+        android:id="@+id/TitleTextViewTodoItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="title" />
+        android:text="title"
+        android:textSize="20sp"/>
 
     <TextView
-        android:id="@+id/UrlItemPhoto"
+        android:id="@+id/CompletedTextViewTodoItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="URL"
-        android:layout_below="@id/TitleItemPhoto" />
-
-    <ImageView
-        android:id="@+id/PhotoItemImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/UrlItemPhoto" />
+        android:text="completed"
+        android:layout_below="@id/TitleTextViewTodoItem"
+        android:textSize="15sp" />
 
 </RelativeLayout>

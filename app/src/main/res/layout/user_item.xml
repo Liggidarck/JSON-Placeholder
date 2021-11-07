@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/UserTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/UserTextViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserTextViewId" />
+
+    <TextView
+        android:id="@+id/UserTextViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserTextViewName" />
+
+    <TextView
+        android:id="@+id/UserTextViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserTextViewUsername" />
+
+    <TextView
+        android:id="@+id/UserTextViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserTextViewEmail" />
+
+    <TextView
+        android:id="@+id/UserTextViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserTextViewEmail" />
+
+    <TextView
+        android:id="@+id/UserTextViewWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserTextViewPhone" />
+
+    <TextView
+        android:id="@+id/UserTextViewCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserTextViewWebsite" />
+
+</RelativeLayout>
